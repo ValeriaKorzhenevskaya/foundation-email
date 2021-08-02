@@ -1,0 +1,139 @@
+.main {
+    position: relative;
+    background-color: $background-color !important;
+
+    &__visit-link {
+        display: block;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        color: $blue-color;
+        text-align: right !important;
+    }
+
+    &__visit-link img {
+        display: inline-block;
+        width: 0.85rem;
+        height: 0.85rem;
+    }
+
+    &__background {
+        position: absolute;
+        top: 3rem;
+        right: 0;
+    }
+
+    &__container {
+        width: auto;
+        margin-top: 5.5rem;
+        margin-bottom: 6.28rem;
+        margin-left: 6.42rem;
+        margin-right: 6.42rem;
+        @media screen and (max-width: 596px) {
+            margin: 0;
+            margin-top: 2rem;
+        }
+    }
+
+    &__page-title {
+        font-size: $h1-font-size;
+        font-weight: 600;
+    }
+
+    &__button span{
+        line-height: 2;
+    }
+
+    &__tile {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        width: 6.42rem;
+        max-width: 6.42rem;
+        height: 6.42rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        border-radius: 10px;
+        img {
+            margin: 0 auto;
+            @media screen and (max-width: 596px) {
+                margin: 1rem auto;
+            }
+        }
+        &.small-12 {
+            @media screen and (max-width: 596px) {
+                display: block !important;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+
+    &__tile.main__tile--orange {
+        background-color: $light-orange-color;
+    }
+
+    &__tile.main__tile--blue {
+        background-color: $light-blue-color;
+    }
+
+    &__tile.main__tile--yellow {
+        background-color: $light-yellow-color;
+    }
+
+    &__tile.main__tile--green {
+        background-color: $light-green-color;
+    }
+
+    &__round-button a {
+        display: flex !important;
+        align-items: center;
+        justify-content: center; 
+        width: 2.85rem;
+        height: 2.85rem;
+        padding: 0 !important;
+        background-color: $background-color;
+        border: 1.5px solid $blue-color !important;
+        border-radius: $button-rounded !important;
+        
+    }
+
+    &__round-button img {
+        width: 1.42rem;
+        height: 1.42rem; 
+    }
+
+    &__link-list {
+        border-top: 1px solid $gray-color-50;
+        border-bottom: 1px solid $gray-color-50;
+        @media screen and (max-width: 596px) {
+            margin: 0 2rem;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    &__social {
+        width: 1.64rem;
+        max-width: 1.64rem;
+        height: 1.64rem;
+        &:not(:last-child) {
+            margin-right: 2.2rem;
+        }
+    }
+
+    &__text {
+        color: $gray-color;
+        line-height: 1.7;
+        text-align: center;
+        & a {
+            color: $gray-color;
+            text-decoration: underline;
+        }
+    }
+}
